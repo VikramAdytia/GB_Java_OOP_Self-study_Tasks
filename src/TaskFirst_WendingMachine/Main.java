@@ -9,7 +9,6 @@ import TaskFirst_WendingMachine.Classes.*;
 // вывести список товаров из VendingMachine
 public class Main {
 
-
     public static void main(String[] args) {
 
         WendingMachine store = new WendingMachine();
@@ -24,7 +23,7 @@ public class Main {
 
         System.out.println(store);
 
-        System.out.println("searching for ay's");
+        System.out.println("searching for Lay's");
         System.out.println(store.findProduct("ys"));
         System.out.println("searching for Bred");
         System.out.println(store.findProduct("Bred"));

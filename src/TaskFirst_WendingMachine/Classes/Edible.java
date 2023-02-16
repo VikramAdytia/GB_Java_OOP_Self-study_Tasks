@@ -44,8 +44,6 @@ public class Edible extends Product {
         this.isJunkFood = isJunkFood;
     }
 
-
-
     @Override
     public String toString(){
         if (isJunkFood){

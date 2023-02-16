@@ -5,7 +5,6 @@ import java.util.List;
 
 public class WendingMachine {
 
-
     public Double getMoney() {
         return money;
     }
@@ -17,7 +16,6 @@ public class WendingMachine {
     }
 
     private List<Product> products = new ArrayList<>();
-
 
     public WendingMachine addProduct(Product product){
         this.products.add(product);
@@ -69,7 +67,6 @@ public class WendingMachine {
         System.out.println("price is wrong");
         return null;
     }
-
     @Override
     public String toString(){
         StringBuilder wdProducts = new StringBuilder();
@@ -81,6 +78,5 @@ public class WendingMachine {
         wdProducts.append(money);
         return wdProducts.toString();
     }
-
 
 }
