@@ -11,6 +11,7 @@ public class UserController {
 
     private ValidateUser validator = new ValidateUser();
 
+
     public UserController(Repository repository) {
         this.repository = repository;
     }
@@ -32,8 +33,7 @@ public class UserController {
     }
 
     public List<User> readUsers() {
-        List<User> users = repository.getAllUsers();
-        return users;
+        return repository.getAllUsers();
     }
 
     public void deleteUser(String userId) {
