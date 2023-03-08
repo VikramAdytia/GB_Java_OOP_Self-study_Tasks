@@ -4,7 +4,6 @@ import TaskSeventh_Final.Notes.Model.Note;
 import TaskSeventh_Final.Notes.Model.RepositoryInFace;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class NoteController implements InFaceController {
     

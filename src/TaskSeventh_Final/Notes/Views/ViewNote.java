@@ -19,13 +19,14 @@ public class ViewNote {
 
         while (true) {
 
-            command = prompt(" create - создать заметку"
-                    + "\n read - прочитать заметку"
-                    + "\n update - обновить заметку"
-                    + "\n delete - удалить заметку"
-                    + "\n list - прочитать все заметки"
-                    + "\n exit - выход\n"
-                    + "Сделайте Ваш выбор: ").toLowerCase();
+            command = prompt("""
+                     create - создать заметку
+                     read - прочитать заметку
+                     update - обновить заметку
+                     delete - удалить заметку
+                     list - прочитать все заметки
+                     exit - выход
+                    Сделайте Ваш выбор:\s""").toLowerCase();
 
             if (command.equals("exit")) {
                 noteController.exit();
@@ -33,23 +34,12 @@ public class ViewNote {
             }
             try {
                 switch (command) {
-                    case "create":
-                        caseCreate();
-                        break;
-                    case "read":
-                        caseRead();
-                        break;
-                    case "update":
-                        caseUpdate();
-                        break;
-                    case "delete":
-                        caseDelete();
-                        break;
-                    case "list":
-                        caseList();
-                        break;
-                    default:
-                        System.out.println("\n Команда не найдена");
+                    case "create" -> caseCreate();
+                    case "read" -> caseRead();
+                    case "update" -> caseUpdate();
+                    case "delete" -> caseDelete();
+                    case "list" -> caseList();
+                    default -> System.out.println("\n Команда не найдена");
                 }
             } catch (Exception e) {
                 System.out.println("Ошибка. " + e.getMessage());

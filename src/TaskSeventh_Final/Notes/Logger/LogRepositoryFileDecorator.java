@@ -1,7 +1,5 @@
 package TaskSeventh_Final.Notes.Logger;
 
-import TaskSeventh_Final.Notes.Logger.FileLogger;
-import TaskSeventh_Final.Notes.Model.JsonRepositoryFile;
 import TaskSeventh_Final.Notes.Model.Note;
 import TaskSeventh_Final.Notes.Model.RepositoryInFace;
 
